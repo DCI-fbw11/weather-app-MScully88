@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./weatherapp.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="header"><br>
+            <div id="greeting"></div><br>
+            <div class="search">
+                <input type="text" placeholder="Please enter a city name..." id="search-txt"><br><br>
+                <a id="search-btn" href="#"><i class="fas fa-search"></i></a><a id="erase-btn" value="Refresh Page"
+                    onClick="window.location.reload()" href="#"><i class="fas fa-eraser"></i></a>
+            </div>
+        </header>
+        <main id="main">
+            <div class="city-container">
+                <div class="city-name"><br><br><br>
+                    <div id="toggle" class="hide" class="show">The current weather for:</div><br>
+                    <div id="city"></div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <img src="" alt="" id="icon">
+            </div>
+            <div class="temperature-container">
+                <div id="temp"></div>
+            </div>
+            <div id="desc"></div>
+        </main>
+    </div>
+    <script src="./weatherapp.js"></script>
+</body>
+
+</html>
