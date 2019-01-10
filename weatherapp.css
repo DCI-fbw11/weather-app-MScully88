@@ -5,7 +5,7 @@ html {
     letter-spacing: 1px;
 }
 body {
-    background-color: darkslategray;
+    background-position: cover;
 }
 .main-container {
     max-width: 550px;
@@ -18,13 +18,18 @@ body {
     padding: 25px 5px;
     background-color: rgba(211, 211, 211, 0.6);
 }
+p {
+    display: inline-block;
+}
 
 /* toggle */
 
 .show {
     display: block;
-    color: white;
-    letter-spacing: 1px;
+    color: black;
+}
+.showDegree {
+    display: inline-block;
 }
 .hide {
     display: none;
@@ -34,6 +39,18 @@ body {
 
 #greeting {
     font-size: 2.5rem;
+}
+.dawn {
+    background-image: url('./Images/sunrise.jpg');
+}
+.day {
+    background-image: url('./Images/day.jpg');
+}
+.dusk {
+    background-image: url('./Images/sunset.jpg');
+}
+.night {
+    background-image: url('./Images/night.jpg');
 }
 #search-txt {
     padding: 5px;
@@ -55,15 +72,21 @@ body {
     color: white;
     text-shadow: 1px 1px black;
 }
-#temp {
-    font-size: 10rem;
-    color: black;
-}
 #desc {
     font-size: 1.5rem;
 }
 #city {
     font-size: 2.8rem;
+}
+#degree {
+    font-size: 2rem;
+    margin-bottom: 75px;
+}
+#temp {
+    font-size: 5rem;
+}
+.temperature-container {
+    padding-top: 25px;
 }
 
 /* image-icon */

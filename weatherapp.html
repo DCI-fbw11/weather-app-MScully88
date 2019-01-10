@@ -15,7 +15,7 @@
 
 <body>
     <div class="main-container">
-        <header class="header"><br>
+        <header class="header">
             <div id="greeting"></div><br>
             <div class="search">
                 <input type="text" placeholder="Please enter a city name..." id="search-txt"><br><br>
@@ -25,8 +25,8 @@
         </header>
         <main id="main">
             <div class="city-container">
-                <div class="city-name"><br><br><br>
-                    <div id="toggle" class="hide" class="show">The current weather for:</div><br>
+                <div class="city-name">
+                    <p id="toggle" class="hide show">The current weather for:</p>
                     <div id="city"></div>
                 </div>
             </div>
@@ -35,8 +35,10 @@
                 <img src="" alt="" id="icon">
             </div>
             <div class="temperature-container">
-                <div id="temp"></div>
+                    <p id="tempTxt" class="hide show">Temperature:</p>
+                <p id="temp"></p><p class="hide show" id="degree">&#x2103</p>
             </div>
+            <p id="descTxt" class="hide show">Description:</p>
             <div id="desc"></div>
         </main>
     </div>
